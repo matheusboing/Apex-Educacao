@@ -15,7 +15,7 @@
         // document.write("Lógica de Algoritmos na Apex")
 
         // Exibindo texto via console.log
-        // document.write("Lógica de Algoritmos na Apex")
+        // console.log("Lógica de Algoritmos na Apex")
 //=========================================================================================
         // 2o
         // VARIÁVEIS
@@ -36,14 +36,14 @@
 
         // Erro 1 - VAR (Passa a ser um problema em aplicações grandes, quando não se sabe se a variável já tinha sido criada ou não.)
 
-        var mensagem = "Diga olá";
-         var times = 2;
+        // var mensagem = "Diga olá";
+        // var times = 2;
         
-         if (times > 3) {
-             mensagem = "Em vez de olá, diga oi"; 
-          }
+        // if (times > 3) {
+        //     mensagem = "Em vez de olá, diga oi"; 
+        // }
     
-         console.log(mensagem)
+        // console.log(mensagem)
 
 
         // Erro 1 - LET (Não declarar)
@@ -69,13 +69,16 @@
         //     console.log(mensagem)
         // }();
 
-        // CONST
+        // Erro 1 - CONST (Não pode delcarar 2x e nem ser atualizado)
         // void function(){ 
         //     const mensagem = 'Alura'; 
         //     console.log(mensagem); // Alura
-            // Correção
-            // Excluir ou mudar o nome da variável abaixo
-            // mensagem = 'Caelum'; 
+
+        //  Erro (Não pode atualizar):
+            // mensagem = 'Caelum';
+            // ou
+            // let mensage = 'teste';
+
             // console.log(mensagem) // Imprime Uncaught TypeError: Assignment to constant variable
         // }();
 //=========================================================================================
