@@ -28,14 +28,45 @@
         // let curso = "Lógica e Algoritmos";
         // let valor = 1500;
         
-        //EXPLICANDO MELHOR SOBRE A DIFERENÇA ENTRE ELAS
+        // Criando variáveis com CONST
+        // const nome = "Matheus Boing";
+        // const cpf = 10530303981;
         
-        // LET
+        //EXPLICANDO MELHOR SOBRE A DIFERENÇA ENTRE ELAS - (COM ESCOPO)
+
+        // Erro 1 - VAR (Passa a ser um problema em aplicações grandes, quando não se sabe se a variável já tinha sido criada ou não.)
+
+        var mensagem = "Diga olá";
+         var times = 2;
+        
+         if (times > 3) {
+             mensagem = "Em vez de olá, diga oi"; 
+          }
+    
+         console.log(mensagem)
+
+
+        // Erro 1 - LET (Não declarar)
         // void function(){ 
+        //     Erro
         //     let mensagem;
-        //     //Correção
+
+        //      Correto:
         //     //let mensagem = "Curso Lógica e Algoritmos"
         //    console.log(mensagem); // Imprime undefined 
+        // }();
+
+        // Erro 2 - LET (Não pode declarar 2x, mas ela pode atualizar)
+        // void function() {
+        //     let mensagem = "JS curso"
+
+        //     Erro:
+        //     let mensagem = "Algoritmo curso"
+
+        //     Correto:
+        //     mensagem = "Algoritmo curso"
+
+        //     console.log(mensagem)
         // }();
 
         // CONST
