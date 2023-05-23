@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Exercício 3</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+        var codigo = prompt("Digite um código");
+        const valor = 10;
+        
+        document.write("Cardápio" + "<br>" + "<br>");
+        document.write("1 - Pizza - 12R$" + "<br>");
+        document.write("2 - Pão de Queijo - 4R$" + "<br>");
+        document.write("3 - Macarrão - 16R$" + "<br>" + "<br>");
+        document.write("Valor recebido:" + valor + "<br>" + "<br>");
+
+
+        if (codigo == 1){
+            document.write("Você escolheu a pizza" + "<br>" + "<br>");
+    
+            if (valor == 12) {
+                document.write("Sem troco");
+            }
+    
+            else if (valor > 12) {
+                troco = valor - 12
+                document.write("Troco: " + troco + "R$");
+            }
+    
+            else {
+                document.write("Valor insuficiente. Favor pagar o valor cheio!");
+            }
+        }
+
+        if (codigo == 2){
+            document.write("Você escolheu Pão de Queijo" + "<br>" + "<br>");
+    
+            if (valor == 4) {
+                document.write("Sem troco");
+            }
+    
+            else if (valor > 4) {
+                troco = valor - 4
+                document.write("Troco: " + troco + "R$");
+            }
+    
+            else {
+                document.write("Valor insuficiente. Favor pagar o valor cheio!");
+            }
+        }
+
+        if (codigo == 3) {
+            document.write("Você escolheu Macarrão" + "<br>" + "<br>");
+    
+            if (valor == 16) {
+                document.write("Sem troco");
+            }
+    
+            else if (valor > 16) {
+                troco = valor - 16
+                document.write("Troco: " + troco + "R$");
+            }
+    
+            else {
+                document.write("Valor insuficiente. Favor pagar o valor cheio!");
+            }
+        }
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

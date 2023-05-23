@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Exercício 5</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+       // Solicitar as larguras dos lados do triângulo
+    var ladoDireito = parseFloat(prompt("Digite a largura do lado direito do triângulo:"));
+    var ladoInferior = parseFloat(prompt("Digite a largura do lado inferior do triângulo:"));
+    var ladoEsquerdo = parseFloat(prompt("Digite a largura do lado esquerdo do triângulo:"));
+
+    // Verificar o tipo de triângulo
+    if (ladoDireito === ladoInferior && ladoInferior === ladoEsquerdo) {
+    console.log("O triângulo é equilátero.");  // Todos os lados são iguais
+    } else if (ladoDireito === ladoInferior || ladoInferior === ladoEsquerdo || ladoDireito === ladoEsquerdo) {
+    console.log("O triângulo é isósceles.");  // Dois lados são iguais
+    } else {
+    console.log("O triângulo é escaleno.");  // Todos os lados são diferentes
+    }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
