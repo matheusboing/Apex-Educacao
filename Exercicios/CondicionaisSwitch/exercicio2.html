@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura condiconal SWITCH</title>
+    <script>
+        let valor = parseInt(prompt("Digite um valor em reais para conversão: "))
+
+        let moeda = prompt("Para qual moeda você deseja converter? \n Dólar (D) ou Euro (E)")
+
+        switch(moeda) {
+            case "D":
+                total = valor / 5.08;
+                document.write("O valor de " + valor + "R$ " + "convertido para Dólares é de: " + total + "US$");
+                break;
+            case "E":
+                total = valor / 5.38;
+                document.write("O valor de " + valor + "R$ " + " convertido para Euros é de: " + total + "EU");
+                break;
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

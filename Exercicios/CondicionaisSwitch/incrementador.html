@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incrementador</title>
+    <script>
+
+        /*
+            Isto ocorre porque no pós-incremento a variável é incrementada depois de usada,
+            ou seja, o primeiro comando printf imprimiu o valor e somente depois a variável incrementou,
+            logo só é possível ver a atualização do valor na próxima linha de código, ou no segundo 'document.write()'
+        */
+        let  i = 100;
+        document.write("Pós-incremento: <br>");
+        document.write("o valor de i é igual a: " + i++); // da mesma forma para decrementar i--
+        document.write("<br>");
+        document.write("o valor de i é igual a: " + i);
+
+        document.write("<br><br>");
+
+        document.write("Pré-incremento: <br>");
+        document.write("o valor de i é igual a: " + ++i); // da mesma forma para decrementar --i
+        document.write("<br>");
+        document.write("o valor de i é igual a: " + i);
+
+        document.write("<br><br>");
+        
+        i += 2 // Incrementando 2 (i = 104)
+        document.write("o valor de i é igual a: " + i);
+
+        document.write("<br><br>");
+
+        i *= 2 // Incrementando multiplicando por 2 (i = 104 * 2)
+        document.write("o valor de i é igual a: " + i);
+
+        document.write("<br><br>");
+
+        i /= 3 // Incrementando dividindo por 3 (i = 104 / 3)
+        document.write("o valor de i é igual a: " + i);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
